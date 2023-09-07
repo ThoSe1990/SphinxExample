@@ -2,7 +2,6 @@ import subprocess
 import yaml 
 import os
 
-
 def build_doc(version, language, tag):
     os.environ["current_version"] = version
     os.environ["current_language"] = language
@@ -33,4 +32,3 @@ for version, details in docs.items():
   for language in details.get('languages', []): 
     build_doc(version, language, version)
     move_dir("./_build/html/", "../pages/"+version+'/'+language+'/')
-
