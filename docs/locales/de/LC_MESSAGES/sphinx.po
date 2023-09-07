@@ -22,9 +22,9 @@ msgstr ""
 
 #: ../../_templates/versions.html:9
 msgid "Languages"
-msgstr ""
+msgstr "Sprachen"
 
 #: ../../_templates/versions.html:17
 msgid "Versions"
-msgstr ""
+msgstr "Versionen"
 
