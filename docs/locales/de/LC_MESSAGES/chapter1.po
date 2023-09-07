@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Thomas
+# This file is distributed under the same license as the SphinxExample
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: SphinxExample \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-06 13:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../chapter1.rst:4
+msgid "Chapter 1: Including C++"
+msgstr "Kapitel 1: Einfügen von C++"
+
+#: ../../chapter1.rst:6
+msgid "Lets's use chapter to add some C++ code here:"
+msgstr "Nutzen wir dieses Kapitel um C++ Code hinzuzufügen"
+
+#: ../../chapter1.rst:8
+msgid "With ``.. code-block:: cpp`` we can add C++ snippets:"
+msgstr "Mit ``.. code-block:: cpp`` können wir C++ snippets einfügen"
+
+#: ../../chapter1.rst:19
+msgid "Source Code documentation"
+msgstr "Source Code dokumentation"
+
+#: ../../chapter1.rst
+msgid "Public Functions"
+msgstr ""
+
+#: ../../chapter1.rst
+msgid "Parameters"
+msgstr "Parameter"
+
+#: ../../chapter1.rst
+msgid "Returns"
+msgstr ""
+
+#: ../../chapter1.rst
+msgid "Private Members"
+msgstr ""
+
