@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: SphinxExample \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-07 12:22+0000\n"
+"POT-Creation-Date: 2023-09-07 12:30+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.12.1\n"
 
-#: ../../index.rst:11
+#: ../../index.rst:14
 msgid "Contents:"
 msgstr "Inhalte:"
 
@@ -29,22 +29,27 @@ msgid "Welcome to SphinxExample's documentation!"
 msgstr "Willkommen zur SphinxBeispiel Dokumentation!"
 
 #: ../../index.rst:9
-msgid "This is the documentation to version 1.0"
-msgstr "Das ist die Dokumentation zu Version 1.0"
+#, fuzzy
+msgid "This is the documentation to version 2.0."
+msgstr "Das ist die Dokumentation zu Version 2.0"
 
-#: ../../index.rst:20
+#: ../../index.rst:12
+msgid "We have a box here for a more significant change!"
+msgstr "Wir haben hier eine Box für eine bedeutendere Änderung!"
+
+#: ../../index.rst:23
 msgid "Indices and tables"
 msgstr "Indizes"
 
-#: ../../index.rst:22
+#: ../../index.rst:25
 msgid ":ref:`genindex`"
 msgstr ""
 
-#: ../../index.rst:23
+#: ../../index.rst:26
 msgid ":ref:`modindex`"
 msgstr ""
 
-#: ../../index.rst:24
+#: ../../index.rst:27
 msgid ":ref:`search`"
 msgstr ""
 

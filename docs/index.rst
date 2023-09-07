@@ -6,7 +6,10 @@
 Welcome to SphinxExample's documentation!
 =========================================
 
-This is the documentation to version 1.0 
+This is the documentation to version 2.0. 
+
+.. note:: 
+   We have a box here for a more significant change!
 
 .. toctree::
    :maxdepth: 2
