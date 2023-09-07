@@ -66,7 +66,7 @@ if build_all_docs is not None:
 
   if (current_version != 'latest'):
     for language in docs[current_version].get('languages', []):
-      html_context['languages'].append([language, pages_root+'/'+current_version+'/'+language+'/'])
+      html_context['languages'].append([language, pages_root+'/'+current_version+'/'+language])
 
   for version, details in docs.items():
-    html_context['versions'].append([version, pages_root+'/'+version+'/'+current_language+'/'])
+    html_context['versions'].append([version, pages_root+'/'+version+'/'+current_language])
