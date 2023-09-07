@@ -31,3 +31,4 @@ for version, details in docs.items():
   for language in details.get('languages', []): 
     build_doc(version, language, version)
     move_dir("./_build/html/", "../pages/"+version+'/'+language+'/')
+
