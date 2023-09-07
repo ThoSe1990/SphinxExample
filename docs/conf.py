@@ -52,11 +52,13 @@ if build_all_docs is not None:
     'versions' : [],
   }
 
-  html_context['languages'].append(['en', pages_root])
-  html_context['languages'].append(['de', pages_root+'/de'])
+  if (current_version == 'latest'):
+    html_context['languages'].append(['en', pages_root])
+    html_context['languages'].append(['de', pages_root+'/de'])
 
-  if (current_version != 'latest'):
+  if (current_language == 'en'):
     html_context['versions'].append(['latest', pages_root])
+  if (current_language == 'de'):
     html_context['versions'].append(['latest', pages_root+'/de'])
 
   with open("versions.yaml", "r") as yaml_file:
