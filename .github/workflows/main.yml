@@ -15,8 +15,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: build
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
         run: |
           sudo apt-get update
           sudo apt install texlive-latex-extra -y
@@ -35,12 +39,7 @@ jobs:
           sudo npm install -g jsdoc
           cd docs
           make html
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+          cd ..
         with:
           # Upload entire repository
           path: './docs/_build/html'
