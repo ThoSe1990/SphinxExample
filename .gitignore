@@ -4,5 +4,4 @@ out/
 build/
 build*/
 *.mo
-public/
 docs/_build/*
