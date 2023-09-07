@@ -6,7 +6,7 @@ import os
 def build_doc(version, language, tag):
     os.environ["current_version"] = version
     os.environ["current_language"] = language
-    subprocess.run("git checkout "+tag)
+    subprocess.run("git checkout " + tag, shell=True)
     subprocess.run(["doxygen", "Doxyfile"])
     os.environ['SPHINXOPTS'] = "-D language='{}'".format(language)
     subprocess.run(["make" , "html"])    
