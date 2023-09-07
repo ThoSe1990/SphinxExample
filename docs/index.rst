@@ -6,10 +6,13 @@
 Welcome to SphinxExample's documentation!
 =========================================
 
-This is the documentation to version 2.0. 
+This is the documentation to the latest version. 
 
 .. note:: 
    We have a box here for a more significant change!
+
+.. warning:: 
+   We recently figured out how to create warning boxes!
 
 .. toctree::
    :maxdepth: 2
