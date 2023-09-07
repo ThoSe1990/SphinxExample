@@ -5,6 +5,9 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+import yaml
+import os
+
 
 project = 'SphinxExample'
 copyright = '2023, Thomas'
@@ -34,9 +37,34 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
-html_context = {
-  'current_version' : "1.0",
-  'versions' : [["1.0", "link to 1.0"], ["2.0", "link to 2.0"]],
-  'current_language': 'en',
-  'languages': [["en", "link to en"], ["de", "link to de"]]
-}
+
+build_all_docs = os.environ.get("build_all_docs")
+pages_root = os.environ.get("pages_root", "")
+
+if build_all_docs is not None:
+  current_language = os.environ.get("current_language")
+  current_version = os.environ.get("current_version")
+
+  html_context = {
+    'current_language' : current_language,
+    'languages' : [],
+    'current_version' : current_version,
+    'versions' : [],
+  }
+
+  html_context['languages'].append(['en', pages_root])
+  html_context['languages'].append(['de', pages_root+'/de'])
+
+  if (current_version != 'latest'):
+    html_context['versions'].append(['latest', pages_root])
+    html_context['versions'].append(['latest', pages_root+'/de'])
+
+  with open("versions.yaml", "r") as yaml_file:
+    docs = yaml.safe_load(yaml_file)
+
+  if (current_version != 'latest'):
+    for language in docs[current_version].get('languages', []):
+      html_context['languages'].append([language, pages_root+'/'+current_version+'/'+language+'/'])
+
+  for version, details in docs.items():
+    html_context['versions'].append([version, pages_root+'/'+version+'/'+current_language+'/'])
