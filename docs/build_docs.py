@@ -8,9 +8,9 @@ def build_doc(version, language, tag):
     os.environ["current_language"] = language
     subprocess.run("git checkout " + tag, shell=True)
     subprocess.run("git checkout main -- conf.py", shell=True)
-    subprocess.run("doxygen", "Doxyfile", shell=True)
+    subprocess.run("doxygen Doxyfile", shell=True)
     os.environ['SPHINXOPTS'] = "-D language='{}'".format(language)
-    subprocess.run(["make" , "html"])    
+    subprocess.run("make html", shell=True)    
 
 def move_dir(src, dst):
   subprocess.run(["mkdir", "-p", dst])
