@@ -38,6 +38,7 @@ jobs:
           sudo pip3 install linuxdoc
           sudo npm install -g jsdoc
           cd docs
+          mkdir _build
           doxygen Doxyfile
           python3 build_docs.py
       - name: Setup Pages
