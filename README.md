@@ -2,7 +2,7 @@
 
 This is a Sphinx example which creates a documentation with versioning in multiple languages. 
 
-Find my <a href="https://www.codingwiththomas.com/blog/my-sphinx-best-practice-for-a-multiversion-documentation-in-different-languages" target="_blank">blog post here</a> where I go through the entire project form the beginning. 
+Find the <a href="https://those1990.github.io/SphinxExample/" target=_blank>final documentation here</a> and my <a href="https://www.codingwiththomas.com/blog/my-sphinx-best-practice-for-a-multiversion-documentation-in-different-languages" target="_blank">blog post here</a> where I go through the entire project form the beginning. 
 
 This includes: 
 - Project set up
